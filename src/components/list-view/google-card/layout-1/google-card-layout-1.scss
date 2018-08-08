@@ -1,0 +1,58 @@
+/*  #Style Styled cards
+================================================*/
+
+google-card-layout-1 {
+    .card-img {
+        width: 130px;
+        height: 220px;
+        position: relative;
+        margin-right: 10px;
+    }
+    [social] {
+        position: absolute;
+        right: 40px;
+        bottom: 15px;
+    }
+    [card-content] {
+        padding: 0 !important;
+    }
+    [card-title] {
+        line-height: normal !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 16px;
+        background-color: #007e4b;
+        font-size: 16px !important;
+        color: #ffffff !important;
+     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); 
+  text-overflow: ellipsis;
+
+    }
+    .card {
+        height: 30vh;
+    }
+    [card-subtitle] {
+        margin: 0;
+    }
+    [card-body-text] {
+        padding-top: 30px;
+        margin-bottom: 25px;
+    }
+    .swiper-slide {
+        display: table;
+    }
+    .slide-zoom {
+        height: 220px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .fab-md {
+        background-color: #DF0104 !important;
+    }
+
+    .scroll-content {
+        top: 10px !important;
+    }
+}

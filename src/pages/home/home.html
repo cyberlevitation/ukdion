@@ -1,0 +1,18 @@
+<!--Fist Screen-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon class="icon-menu" name="menu"></ion-icon>
+    </button>
+        <ion-title>{{data.toolbarTitle}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<!--Fist Screen Content-->
+<ion-content>
+   
+       <google-card-layout-1
+       [data]="params.data"
+       [events]="params.events">
+       </google-card-layout-1>
+   
+</ion-content>

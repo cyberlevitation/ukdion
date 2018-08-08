@@ -1,0 +1,27 @@
+<!--Theme Styled cards-->
+<ion-content has-header>
+    <ion-grid no-padding *ngIf="data != null">
+        <ion-row>
+            <ion-col col-12 col-md-12 col-lg-6 *ngFor="let item of data.items;let i = index">
+                <ion-card no-padding text-left class="card" (click)="onEvent('onItemClick', item.title, $event)">
+                    <!--Card-content-->
+                    <ion-card-content>
+
+                        <ion-card-title>
+                            <h2 card-title>{{item.title}}</h2>
+                        </ion-card-title>
+
+                    
+
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<!-- Fab Button -->
+<ion-fab #fab bottom right>
+    <button button-ion-fab ion-fab (click)="onEvent('onFab', data, $event)">
+      <ion-icon name="add"></ion-icon>
+  </button>
+</ion-fab>
