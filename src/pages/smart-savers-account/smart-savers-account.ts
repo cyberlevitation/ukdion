@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ApprovalsPage page.
+ * Generated class for the SmartSaversAccountPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-approvals',
-  templateUrl: 'approvals.html',
+  selector: 'page-smart-savers-account',
+  templateUrl: 'smart-savers-account.html',
 })
-export class ApprovalsPage {
-
-  page:any;
+export class SmartSaversAccountPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ApprovalsPage');
+    console.log('ionViewDidLoad SmartSaversAccountPage');
   }
 
 }

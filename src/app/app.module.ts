@@ -16,23 +16,28 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
-@NgModule({
-    declarations: [MyApp],
-    providers: [
-        BarcodeScanner, StatusBar, SplashScreen,
-        ToastService, LoadingService,
-        { provide: ErrorHandler, useClass: IonicErrorHandler },
-    ],
-    imports: [
-        BrowserModule,
-        HttpModule,
-        AngularFireModule.initializeApp(AppSettings.FIREBASE_CONFIG),
-        AngularFireDatabaseModule, AngularFireAuthModule,
-        IonicModule.forRoot(MyApp),
-    ],
-    bootstrap: [IonicApp],
-    entryComponents: [MyApp],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
-})
 
-export class AppModule { }
+
+@NgModule({
+  declarations: [MyApp],
+  providers: [
+    BarcodeScanner,
+    StatusBar,
+    SplashScreen,
+    ToastService,
+    LoadingService,
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    AngularFireModule.initializeApp(AppSettings.FIREBASE_CONFIG),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    IonicModule.forRoot(MyApp)
+  ],
+  bootstrap: [IonicApp],
+    entryComponents: [MyApp],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class AppModule {}

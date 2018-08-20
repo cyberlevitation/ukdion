@@ -24,10 +24,9 @@ google-card-layout-1 {
         background-color: #007e4b;
         font-size: 16px !important;
         color: #ffffff !important;
-     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); 
-  text-overflow: ellipsis;
-
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        text-overflow: ellipsis;
     }
     .card {
         height: 30vh;
@@ -51,8 +50,17 @@ google-card-layout-1 {
     .fab-md {
         background-color: #DF0104 !important;
     }
-
     .scroll-content {
         top: 10px !important;
+    }
+    ion-fab-list[side=top] {
+        padding-bottom: 20px;
+        right: 10px;
+    }
+    .fab-in-list.show {
+        border-radius: 10px;
+        width: fit-content;
+        color: white;
+        margin: 15px;
     }
 }
